@@ -1,0 +1,76 @@
+body{
+    flex-wrap: wrap;
+    height: 100vh;
+    
+}
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, #a400f0,#9100d4,#8300c0,#6c009e);
+    padding: 10px 20px;
+    width: 100%;
+}
+.topo h1{
+    font-family: "Big Shoulders", sans-serif;
+}
+.topo input{
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+.menu {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu a{
+    font-family: "Big Shoulders", sans-serif;
+}
+.menu a:hover{
+    transform: scale(1.2);
+}
+.baner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+.baner img{
+
+}
+footer{
+    background-image: linear-gradient(to right, #a400f0,#9100d4,#8300c0,#6c009e);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vitrine{
+    padding: 10px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 200px;
+    border: solid 3px #aa00b9 ;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px #e977f3;
+    transition: 0.3s ease-in-out;
+
+
+}
+.card img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
