@@ -15,6 +15,7 @@ body{
 }
 .topo h1{
     font-family: "Big Shoulders", sans-serif;
+    cursor: pointer;
 }
 .topo input{
     padding: 5px;
