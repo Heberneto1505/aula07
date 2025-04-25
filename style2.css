@@ -129,9 +129,59 @@ footer{
 .formulario{
     margin-bottom: 50px;
 }
+
+.container_entregua{
+    margin-left: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.container_entregua > input{
+    width: 800px;
+    height: 40px;
+    border-radius: 10px;
+}
+.container_entregua > button{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+
+
+
+.titulo_cartao{
+    margin-left: 110px;
+}
+.container_cartao{
+    margin-left: 110px;
+    display: flex;
+    
+}
+.formulario_cartao{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .formulario_cartao{
     display: flex;
-    gap: 100px;
+    gap: 50px;
     margin-bottom: 40px;
 }
 .cartao_fisico {
