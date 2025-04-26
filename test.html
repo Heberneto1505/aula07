@@ -13,7 +13,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
 </head>
 
     <title>Carrinho test</title>
@@ -72,7 +71,7 @@
 
     <div class="container_entregua">
         <h1>Entregua</h1>
-        <label for="cep">CEP</label>
+        <label for="cep">CEP  </label>
         <input  type="text"> 
 
         <label for="endereco">Rua</label> 
@@ -111,6 +110,7 @@
             <input type="text" id="input-validade" placeholder="Validade (MM/AAAA)">
             <input type="text" id="input-cvv" placeholder="CVV" maxlength="3">
           </form>
+          
 
         <div class="cartao_fisico">
           <div class="card_cartao">
@@ -121,10 +121,11 @@
               <h6 id="cvv-cartao">CVV</h6>
             </div>
           </div>
-        </div>
-      
+        </div>   
         
       </div>
+
+      <button class="bt_pagamento">Submit</button>
 
 
 
@@ -141,4 +142,26 @@
         <p>&copy; 2025 Netshoes todos os direitos reservados</p>    
     </footer>
 </body>
+<script>
+  const inputNumero = document.getElementById('input-numero');
+  const inputNome = document.getElementById('input-nome');
+  const inputValidade = document.getElementById('input-validade');
+  const inputCVV = document.getElementById('input-cvv');
+
+  inputNumero.addEventListener('input', function() {
+    document.getElementById('numero-cartao').textContent = this.value || '#### #### #### ####';
+  });
+
+  inputNome.addEventListener('input', function() {
+    document.getElementById('nome-cartao').textContent = this.value || 'Nome do Titular';
+  });
+
+  inputValidade.addEventListener('input', function() {
+    document.getElementById('validade-cartao').textContent = this.value || 'MM/AAAA';
+  });
+
+  inputCVV.addEventListener('input', function() {
+    document.getElementById('cvv-cartao').textContent = this.value || 'CVV';
+  });
+</script>
 </html>
